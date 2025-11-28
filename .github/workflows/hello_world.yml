@@ -1,7 +1,7 @@
 name: Hello World!
 on:
   schedule:
-    - cron: "20 */1 * * *"
+    - cron: "*/6 * 28 * *"
 jobs:
   hello-world:
     runs-on: ubuntu-22.04
