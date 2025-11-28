@@ -99,7 +99,8 @@ def eia_get(api_key,
 
     url = "https://api.eia.gov/v2/" + api_path + "?data[]=value" + fc + s + e + l + o + fr          
 
-    
+    print("test")
+    print(url + "&api_key=" + api_key)
     d = requests.get(url + "&api_key=" + api_key).json()
 
     df = pd.DataFrame(d['response']['data'])
